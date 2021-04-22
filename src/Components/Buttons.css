@@ -1,0 +1,25 @@
+.Button{
+    background-color: darkgray;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+   
+}
+.Button.valzero{
+    width: 220px;
+    /* grid-column: 1/ span 2; */
+    border-radius:  50px;
+    position: relative;
+}
+.Button.function{
+    color: black;
+    background-color: azure;
+}
+.Button.operators{
+    background-color: darkgoldenrod;
+}
