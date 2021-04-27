@@ -121,17 +121,17 @@ const App = () => {
     }
 
     if(content === "+/-"){
-      setValue(value * -1)
+      setValue((val * -1).toString())
       return
     }
     if(content === "%"){
-      setValue(value /100)
-      setMemory(value)
+      setValue((val /100).toString())
+      setMemory(val)
       return
     }
     if(content === "."){
       if(val.includes('.'))return
-      setValue(value + '.')
+      setValue(val + '.')
       return
     }
 
