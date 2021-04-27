@@ -25,6 +25,11 @@
   grid-template-columns: repeat(4, 1fr);
   margin-left: 10px;
 }
+.call{
+  font-size: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
 
 
 /* 

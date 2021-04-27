@@ -23,7 +23,8 @@ const App = () => {
      return
     }
     if(content === "DEL"){
-      setValue(storenumb)
+    
+        setValue(storenumb)
       return
     }
     if(content === "="){
@@ -172,7 +173,7 @@ const App = () => {
         <Buttons onBTNClick={handleBTN} content="."/>
         <Buttons onBTNClick={handleBTN} content="="   type='operators' />
         </div>
-        <div className="display">{storenumb}{operator}</div>
+        <div className="call">{storenumb}{operator}</div>
       </div>
       
     </div>
