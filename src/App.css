@@ -14,14 +14,16 @@
   margin-top: 50px;
   text-align: right;
   font-weight: 300;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .buttons{
   display: grid;
   grid-gap: 30px;
   margin-top: 60px;
-  /* grid-template-rows: repeat(5, 1fr); */
   grid-template-columns: repeat(4, 1fr);
+  margin-left: 10px;
 }
 
 

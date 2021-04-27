@@ -12,7 +12,6 @@
 }
 .Button.valzero{
     width: 220px;
-    /* grid-column: 1/ span 2; */
     border-radius:  50px;
     position: relative;
 }
