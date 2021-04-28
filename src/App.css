@@ -1,6 +1,6 @@
 .App {
   width: 510px;
-  height:850px;
+  height: 850px;
   background: black;
   color: white;
   padding: 17px;
@@ -8,6 +8,9 @@
   border-radius: 50px; 
   margin: auto;
   font-size: 50px;
+}
+.top{
+  margin-top: 20px;
 }
 .display{
   font-size: 50px;
@@ -17,18 +20,17 @@
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .buttons{
   display: grid;
-  grid-gap: 30px;
-  margin-top: 60px;
-  grid-template-columns: repeat(4, 1fr);
-  margin-left: 10px;
-}
-.call{
-  font-size: 50px;
+  grid-gap: 25px;
   margin-top: 50px;
-  text-align: center;
+  margin-left: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.Call{
+  font-size: 50px;
+  margin-top: 20px;
+ text-align: center;
 }
 
 

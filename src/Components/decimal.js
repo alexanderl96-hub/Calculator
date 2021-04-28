@@ -1,22 +1,18 @@
 
-const decimal = val  => {
-    
- if (val  === "0") return val 
- let output = ""
- let decim = ""
- let num = false
- if(val.includes(".")){
-    output  = val.substring(0, val.indexOf("."))
-     decim = val.substring(val.indexOf("."))
- }else{
-    output = val 
- }
- 
- if(val < 0){
-    num = true
-    output  = output.substring(1)
- }
- return num ? "-" + parseFloat(output ).toLocaleString() + decim : parseFloat(output ).toLocaleString() + decim
-
+const decimal = value => {
+   let ouput = ''
+   let decimal = ''
+   let neg = false
+   if(value.includes('.')){
+       ouput = value.substring(0, value.indexOf('.'))
+       decimal = value.substring(value.indexOf('.'))
+   }else{
+       ouput = value
+   }
+   if(value < 0){
+       neg = true
+       ouput = ouput.substring(1)
+   }
+   return neg ? "-" + parseFloat(ouput).toLocaleString() + decimal : parseFloat(ouput).toLocaleString() + decimal
 }
-export default decimal;
+export default decimal

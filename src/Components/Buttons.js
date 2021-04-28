@@ -1,10 +1,7 @@
 import React from 'react'
-import "./Buttons.css"
+import './Buttons.css'
 
-const Buttons = ({content, onBTNClick, type})=>{
- return(
-     <div className={`Button  ${ type || ''}`} onClick={onBTNClick(content)}>{content}
-     </div>
- )
+const Button = ({content, onBTNClick, type}) => {
+    return <div className={`Button ${ type || ''}`} onClick={onBTNClick(content)}>{content}</div>
 }
-export default Buttons
+export default Button 

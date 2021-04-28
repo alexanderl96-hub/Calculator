@@ -10,11 +10,7 @@
     cursor: pointer;
    
 }
-.Button.valzero{
-    width: 220px;
-    border-radius:  50px;
-    position: relative;
-}
+
 .Button.function{
     color: black;
     background-color: azure;
