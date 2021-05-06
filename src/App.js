@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import Buttons from './Components/Buttons';
 import decimal from "./Components/decimal"
-hhgjhsdjygjkhjf
+
 
 
 const App =()=> {
