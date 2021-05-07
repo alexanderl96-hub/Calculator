@@ -144,7 +144,7 @@ const App =()=> {
     }else{
       setValue(parseFloat(number + content).toString())
     }
-    // setValue((parseFloat(number + content)).toString())
+    
   }
 
   
