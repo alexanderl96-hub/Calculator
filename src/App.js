@@ -125,19 +125,37 @@ const App =()=> {
       if(!operator)return
 
       if(operator === "/"){
-        setValue((stored / parseFloat(val)).toString())
+        setValue(Math.round(stored / parseFloat(val)).toString())
       }else if(operator === "*"){
-        setValue((stored * parseFloat(val)).toString())
+        setValue(Math.round(stored * parseFloat(val)).toString())
       }else if(operator === "-"){
-        setValue((stored - parseFloat(val)).toString())
+        setValue(Math.round(stored - parseFloat(val)).toString())
       }else if(operator === "+"){
-        setValue((stored + parseFloat(val)).toString())
+        setValue(Math.round(stored + parseFloat(val)).toString())
       }
       
       setMemory(null)
       setOperator(null)
       return
     }
+    //* we can use either "content === '='Math.round()" or  "content === '=' " 
+    // if(content === "="){
+    //   if(!operator)return
+
+    //   if(operator === "/"){
+    //     setValue((stored / parseFloat(val)).toString())
+    //   }else if(operator === "*"){
+    //     setValue((stored * parseFloat(val)).toString())
+    //   }else if(operator === "-"){
+    //     setValue((stored - parseFloat(val)).toString())
+    //   }else if(operator === "+"){
+    //     setValue((stored + parseFloat(val)).toString())
+    //   }
+      
+    //   setMemory(null)
+    //   setOperator(null)
+    //   return
+    // }
 
     if(val[val.length -1]=== "."){
       setValue(val + content)
