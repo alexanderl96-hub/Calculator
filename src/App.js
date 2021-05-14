@@ -12,7 +12,15 @@ const App =()=> {
   const [operator, setOperator]= useState(null)
    
   const handleBTN = content => () =>{
-   
+    // If you want to clean up this code, using a switch statement would be great.
+    // A switch statement is perfect for when you're checking one variable (`content`)
+    // against a set of possible values with `===`.
+
+    // It's not only perfect for that kind of logic, that's actually ALL that switch
+    // statements handle. Don't try it anywhere else!
+
+    // (The danger is forgetting a `break` or a `return`!)
+
     const number = parseFloat(val)
 
     if(content === "AC"){
